@@ -1,0 +1,52 @@
+{
+    "title": "Agency",
+    "name": "startbootstrap-agency",
+    "version": "6.0.1",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
+    },
+    "description": "Agency is a one page HTML theme for Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/agency",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.5.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "9.8.0",
+        "browser-sync": "2.26.7",
+        "chokidar": "3.4.0",
+        "concurrently": "5.2.0",
+        "postcss": "7.0.30",
+        "prettier": "2.0.5",
+        "pug": "2.0.4",
+        "sass": "1.26.5",
+        "shelljs": "0.8.4"
+    }
+}
