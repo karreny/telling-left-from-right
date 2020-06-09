@@ -24,6 +24,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars ml-1"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#paper">Paper</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#dataset">Dataset</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#talk">Talk</a></li>
@@ -62,6 +63,19 @@
             </div>
         </header>
         
+        <!-- Overview-->
+        <section class="page-section" id="overview">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Overview</h2>
+                    <p align="left" style="font-size:20px"> We use self-supervision to train a model to establish spatial correspondence between sight and sound and introduce a video dataset with spatial audio.
+                    <br>
+                    <br>
+                    <img src="assets/img/overview.gif" alt="Overview of the Paper">
+                </div>
+            </div>
+        </section>
+        
         <!-- Paper-->
         <section class="page-section" id="paper">
             <div class="container">
@@ -81,7 +95,9 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">YouTube-ASMR-300K Dataset</h2>
                     <h3 class="section-subheading" align="left" style="font-size:30px">Description</h3>
-                    <p align="left" style="font-size:20px;margin-top:-50px;"> Learning from videos with spatial audio is a relatively new domain. While the amount of spatial audio content is rapidly increasing, currently there are few video datasets with spatial audio in which the visual content is spatially aligned with the audio content. Our work introduces a new large-scale dataset of ASMR videos collected from YouTube that contains stereo audio. ASMR (autonomous sensory meridian response) videos are readily available online and typically feature an individual actor or "ASMRtist" making different sounds while facing towards a camera set up with stereo/binaural or paired microphones. The audio in these videos contains binaural cues that, when listened to with headphones, create a highly immersive experience in which listeners perceive the sounds as if they were happening around them. There is strong correspondence between the visual and spatial audio content in these videos that can be used to train models on tasks such as audio-visual localization, audio-visual spatialization (upmixing) and audio-visual source separation with stereo sound.</p>
+                    <p align="left" style="font-size:20px;margin-top:-50px;"> We introduce a new large-scale dataset of ASMR videos collected from YouTube that contains stereo audio. ASMR (autonomous sensory meridian response) videos are readily available online and typically feature an individual actor or "ASMRtist" making different sounds while facing towards a camera set up with stereo/binaural or paired microphones. The audio in these videos contains binaural cues such that there is strong correspondence between the visual and spatial audio cues. </p>
+                    <img src="assets/img/website-bg-color.jpg" alt="Examples of ASMR Videos">
+
                     <h3 class="section-subheading" align="left" style="font-size:30px"><a href="https://drive.google.com/file/d/1uTPYWa2a8nF35Y6oqT8GFiqqxCYBnPNK/view?usp=sharing">Download the video URLs</a></h3>
                 </div>
             </div>
