@@ -134,7 +134,7 @@ def parse_arguments():
                         dest='num_retries',
                         action='store',
                         type=int,
-                        default=1,
+                        default=10,
                         help='Number of retries when ffmpeg encounters an HTTP' \
                              'issue, which could be to unpredictable network behavior')
     parser.add_argument('-n',
