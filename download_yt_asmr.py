@@ -641,8 +641,8 @@ def download_subset_videos(subset_path, data_dir, ffmpeg_path, ffprobe_path,
         pool = mp.Pool(num_workers)
         try:
             for row_idx, row in enumerate(subset_data):
-                # Skip commented lines
-                if row[0][0] == '#':
+                # Skip commented lines and first line
+                if row[0][0] == '#' or row_idx == 0:
                     continue
                 ytid, ts_start, ts_end = row[0], float(row[1]), float(row[2])
 
