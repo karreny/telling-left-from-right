@@ -15,7 +15,7 @@ def init_file_logger(logger, log_path=None):
     """
     # Set up file handler
     if not log_path:
-        log_path = './audiosetdl.log'
+        log_path = './yt-asmr-dl.log'
     handler = logging.handlers.RotatingFileHandler(log_path, maxBytes=2**20)
     handler.setLevel(logging.DEBUG)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
