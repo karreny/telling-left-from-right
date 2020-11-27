@@ -35,6 +35,6 @@ python download_yt_asmr.py youtube_asmr/test.csv test_data
 ```
 ### Expected output
 MP4 video clips and FLAC audio clips will be downloaded to `<data_dir>/data/video/` and `<data_dir>/data/audio` respectively. 
-Download details (including errors) will be logged at `yt-asmr-dl.log`. Download errors due to YouTube will also 
+Download details (including errors) will be logged at `yt-asmr-dl.log`.
 
 
